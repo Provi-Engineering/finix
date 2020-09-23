@@ -5,7 +5,7 @@ require 'finix/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'finix'
-  spec.required_ruby_version = '>= 1.9'
+  spec.required_ruby_version = '>= 2.5'
   spec.version       = Finix::VERSION
   spec.authors       = ['finix-payments']
   spec.email         = ['support@finixpayments.com']
@@ -22,15 +22,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency('faraday', '~> 0.10.0')
-  spec.add_dependency('faraday_middleware', '~> 0.10.1')
-
-  if RUBY_VERSION >= '2.0'
-    spec.add_dependency('json', '~> 2.0.2')
-    spec.add_dependency('addressable', '~> 2.5.0')
-  else
-    spec.add_dependency('public_suffix', '~> 1.4.6')
-    spec.add_dependency('json', '~> 1.8')
-    spec.add_dependency('addressable', '~> 2.3')
-  end
+  spec.add_dependency('faraday', '~> 1.0')
+  spec.add_dependency('faraday_middleware', '~> 1.0')
+  spec.add_dependency('json', '~> 2.3')
+  spec.add_dependency('addressable', '~> 2.7.0')
 end
