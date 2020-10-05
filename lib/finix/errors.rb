@@ -16,9 +16,9 @@ module Finix
     end
 
     def to_s
-      "#{@errors}"
+      err_messages = @attributes['errors'].map { |err| err.message }
+      err_messages.join(', ')
     end
-
   end
 
   class BadRequest < Errors
