@@ -1,3 +1,3 @@
 module Finix
-  VERSION = '0.18.rc'
+  VERSION = '0.19.rc'
 end
