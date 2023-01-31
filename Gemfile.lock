@@ -1,0 +1,86 @@
+PATH
+  remote: .
+  specs:
+    finix (0.19.rc)
+      addressable (~> 2.7.0)
+      faraday (~> 1.0)
+      faraday_middleware (~> 1.0)
+      json (~> 2.3)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    ansi (1.5.0)
+    builder (3.2.4)
+    byebug (9.0.6)
+    diff-lcs (1.5.0)
+    dotenv (2.1.2)
+    faraday (1.10.3)
+      faraday-em_http (~> 1.0)
+      faraday-em_synchrony (~> 1.0)
+      faraday-excon (~> 1.1)
+      faraday-httpclient (~> 1.0)
+      faraday-multipart (~> 1.0)
+      faraday-net_http (~> 1.0)
+      faraday-net_http_persistent (~> 1.0)
+      faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
+      faraday-retry (~> 1.0)
+      ruby2_keywords (>= 0.0.4)
+    faraday-em_http (1.0.0)
+    faraday-em_synchrony (1.0.0)
+    faraday-excon (1.1.0)
+    faraday-httpclient (1.0.1)
+    faraday-multipart (1.0.4)
+      multipart-post (~> 2)
+    faraday-net_http (1.0.1)
+    faraday-net_http_persistent (1.2.0)
+    faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
+    faraday-retry (1.0.3)
+    faraday_middleware (1.2.0)
+      faraday (~> 1.0)
+    json (2.6.3)
+    minitest (5.10.3)
+    minitest-reporters (1.1.19)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
+    multipart-post (2.3.0)
+    public_suffix (4.0.7)
+    rake (10.4.2)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.4)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    ruby-progressbar (1.11.0)
+    ruby2_keywords (0.0.5)
+    vcr (3.0.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug (~> 9.0.6)
+  dotenv (~> 2.1.1)
+  finix!
+  minitest (~> 5.10.1)
+  minitest-reporters (~> 1.1.13)
+  rake (~> 10.4.2)
+  rspec (~> 3.5.0)
+  vcr (~> 3.0.3)
+
+BUNDLED WITH
+   1.17.3
